@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500&display=swap');
+
+
+$background: #ffffff;
+$color-primary-text: #474747;
+$color-additional-text: #777777;
+$color-theme: #ffba9d;
+$extra-color: #f4f4f4;
+$error-color: #891900;
+$delete-color: #a30000;
+$approve-color: #01620b;
+
+
+.fa-brands {
+  font-size: 18px;
+  color: $color-primary-text;
+  transition: all 0.5s;
+
+  &:hover {
+    color: $color-theme;
+  }
+
+  &:active {
+    color: $color-theme;
+  }
+}
+
+@mixin main_heading {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+}
+@mixin sub_heading {
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 28px;
+}
+@mixin base_text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+}
+@mixin sub_text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+@mixin small_text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+
+@mixin media-screen-large {
+  @media screen and (max-width: $screen-large) {
+    @content;
+  }
+}
+
+@mixin media-screen-medium {
+  @media screen and (max-width: $screen-large) {
+    @content;
+  }
+}
+
+@mixin media-screen-tablet {
+  @media screen and (max-width: $screen-large) {
+    @content;
+  }
+}
+
+@mixin media-screen-small {
+  @media screen and (max-width: $screen-large) {
+    @content;
+  }
+}
+
+@mixin media-screen-xs {
+  @media screen and (max-width: $screen-large) {
+    @content;
+  }
+}

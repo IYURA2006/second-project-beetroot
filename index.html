@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/reset.css" />
+    <link rel="stylesheet" href="/dist/header.css" />
+    <link rel="stylesheet" href="/dist/main.css" />
+    <link rel="stylesheet" href="/dist/comments.css" />
+    <link rel="stylesheet" href="/dist/footer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+    <title>Meliora</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header content">
+        <nav class="nav">
+          <a href="#"
+            ><img
+              src="/assets/Meliora.svg"
+              alt="company_name"
+              class="nav__logo-img"
+          /></a>
+          <div class="nav__links">
+            <a href="#" class="nav__link">Home</a>
+            <a href="#" class="nav__link--active nav__link">Blog</a>
+            <a href="#" class="nav__link">Contact us</a>
+            <div class="nav__dropdown">
+              <a class="nav__link"
+                >More <i class="fa-solid fa-chevron-down"></i>
+              </a>
+              <div class="nav__dropdown-content">
+                <a href="#" class="nav__dropdown-content--link">Link 1</a>
+                <a href="#" class="nav__dropdown-content--link">Link 2</a>
+                <a href="#" class="nav__dropdown-content--link">Link 3</a>
+              </div>
+            </div>
+          </div>
+          <form method="get" class="nav__search">
+            <input
+              type="text"
+              class="nav__search--input"
+              placeholder="Search"
+              required
+              maxlength="15"
+            />
+            <button type="submit" class="nav__search--submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </nav>
+
+        <section class="header__info">
+          <span class="header__info--comments">User interface</span>
+          <h3 class="header__info--title">
+            Bad Design vs. Good Design: 5 Examples We can Learn From
+          </h3>
+          <span class="header__info--date">October 24.2020</span>
+          <span class="header__info--comments"
+            ><span> | </span> Shane Hobbins
+          </span>
+        </section>
+      </header>
+
+      <main class="main content">
+        <section class="main__swiper swiper">
+          <div class="swiper-wrapper">
+            <img
+              src="/assets/swiper_first_image.png"
+              class="swiper-slide"
+              alt="first image"
+            />
+            <img
+              src="/assets/swiper_second_image.jpg"
+              class="swiper-slide"
+              alt="first image"
+            />
+            <img
+              src="/assets/swiper_third_image.jpg"
+              class="swiper-slide"
+              alt="first image"
+            />
+          </div>
+        </section>
+
+        <section class="main__description">
+          <p class="main__description--paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis
+            sagittis sem ac porta. Sed commodo ligula vitae mollis tristique.
+            Maecenas egestas semper mauris. Duis tempus blandit ultrices. Proin
+            elit nulla, viverra id suscipit quis, tristique a dolor. Sed
+            dapibus, orci ac luctus tincidunt, massa erat porttitor odio, non
+            imperdiet dui risus et elit.
+          </p>
+          <span class="main__description--subtitle">
+            Information overload
+          </span>
+          <p class="main__description--paragraph">
+            Vivamus dictum ultrices tortor. Ut imperdiet, enim in suscipit
+            dignissim, mauris massa pellentesque augue, quis ultricies sem
+            tortor et velit.
+          </p>
+        </section>
+
+        <section class="main__remark">
+          <p class="main__remark--paragraph">
+            Sed commodo ligula vitae mollis tristique. Maecenas egestas semper
+            mauris. Duis tempus blandit ultrices. Proin elit nulla, viverra id
+            suscipit quis, tristique a dolor.
+          </p>
+          <p class="main__remark--paragraph">
+            ‘Designing For Sustainability, Tim Frick, 2014'
+          </p>
+          <span class="main__remark--subtitle">
+            Lessons Learnt: Best Practice
+          </span>
+        </section>
+
+        <section class="main__points">
+          <ul class="main__points--list">
+            <li class="main__points--items">
+              Morbi congue odio vel luctus aliquam. Morbi accumsan sapien at
+              lorem ultricies aliquam eu eu nisl. Suspendisse.
+            </li>
+            <li class="main__points--items">
+              Maecenas sit amet ligula auctor neque aliquam placerat et ac
+              neque. Proin risus eros, fringilla eu suscipit dignissim,
+              dignissim.
+            </li>
+          </ul>
+        </section>
+
+        <section class="main__share">
+          <article class="main__share--tags">
+            <a href="#" class="main__share--tag">#HCI</a>
+            <a href="#" class="main__share--tag">#Design Thinking</a>
+          </article>
+          <article class="main__share--socials">
+            <span class="main__share--title"> Share </span>
+            <a
+              href="https://www.facebook.com/MONOcreators"
+              class="socials--links"
+            >
+              <i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="https://github.com/IYURA2006" class="socials--links"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="https://twitter.com/DefenceU" class="socials--links"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/yuriy-ilnytskyi-113064227/"
+              class="socials--links"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+          </article>
+        </section>
+
+        <section class="main__comment">
+          <h2 class="main__comment--title">Add a Comment</h2>
+
+          <form
+            action="/"
+            method="get"
+            class="main__comment--form form"
+            id="form"
+          >
+            <article class="form__inputs">
+              <div>
+                <label for="firstName" class="form__inputs--label">Name*</label>
+                <input
+                  type="text"
+                  name="firstname"
+                  id="firstName"
+                  class="form__inputs--data"
+                  placeholder="Your first name"
+                  maxlength="255"
+                />
+              </div>
+
+              <div>
+                <label for="userEmail" class="form__inputs--label"
+                  >Email*</label
+                >
+                <input
+                  type="email"
+                  name="email"
+                  id="userEmail"
+                  class="form__inputs--data"
+                  placeholder="Your email adress"
+                  maxlength="255"
+                />
+              </div>
+
+              <div>
+                <label for="website" class="form__inputs--label">Website</label>
+                <input
+                  type="text"
+                  name="website"
+                  id="website"
+                  class="form__inputs--data"
+                  placeholder="Your website"
+                  maxlength="255"
+                />
+              </div>
+            </article>
+
+            <article class="form__switcher">
+              <label class="form__switch">
+                <input
+                  type="checkbox"
+                  class="form__switch--checkbox"
+                  id="rememberMe"
+                />
+                <span class="form__switch--slider"></span>
+              </label>
+              <span class="form__switcher--text">
+                Save my name, email, and website in this browser for the next
+                time I comment
+              </span>
+            </article>
+
+            <article class="form__smiles">
+              <span class="form__smiles--text">Message*</span>
+              <a class="form__smiles--button" id="smiles">
+                <img src="/assets/smile.svg" alt="smile" />
+              </a>
+              <a class="form__smiles--button">
+                <img src="/assets/winked.svg" alt="winked" />
+              </a>
+              <a class="form__smiles--button">
+                <img src="/assets/happy.svg" alt="happy" />
+              </a>
+              <a class="form__smiles--button">
+                <img src="/assets/twofingers.svg" alt="victory" />
+              </a>
+              <a class="form__smiles--button">
+                <img src="/assets/normal.svg" alt="normal" />
+              </a>
+              <a class="form__smiles--button">
+                <img src="/assets/angry.svg" alt="angry" />
+              </a>
+              <a class="form__smiles--button">
+                <img src="/assets/sad.svg" alt="sad" />
+              </a>
+            </article>
+
+            <textarea
+              name="comment"
+              class="form__textarea"
+              cols="30"
+              rows="10"
+              placeholder="Write your comment down"
+              id="comment"
+            ></textarea>
+
+            <article class="form__buttons">
+              <button
+                type="reset"
+                class="form__buttons--button form__buttons--cancel"
+                id="cancel"
+              >
+                Cancel
+              </button>
+              <button
+                type="submit"
+                class="form__buttons--button form__buttons--apply"
+                id="submit"
+              >
+                Post
+              </button>
+            </article>
+          </form>
+        </section>
+
+        <section class="main__comments">
+          <h2 class="main__comments--title">Comments</h2>
+          <article class="main__comments--comment comment">
+            <div>
+              <img
+                src="/assets/avatar_user_1.png"
+                class="comment__avatar"
+                alt="user avatar"
+              />
+            </div>
+            <div class="comment__content">
+              <div class="comment__content--top">
+                <article>
+                  <span class="comment__content--name"> Jon Davis </span>
+                  <span class="comment__content--time"> 2 Minutes ago </span>
+                </article>
+
+                <div>
+                  <button class="comment__content--edit" >
+                    <i class="fa-regular fa-pen-to-square"></i>
+                  </button>
+                  <button class="comment__content--delete" >
+                    <i class="fa-solid fa-trash"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="comment__content--middle">
+                <p class="comment__content--paragraph">
+                  Lorem &#128512; <b>ipsum dolor</b> sit amet, consectetuer
+                  adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                  laoreet dolore magna.
+                </p>
+              </div>
+              <div class="comment__content--bottom">
+                <button class="comment__content--reply" >
+                  <i class="fa-solid fa-reply"></i>Reply
+                </button>
+                <div>
+                  <button class="comment__content--like" >
+                    5<i class="fa-solid fa-thumbs-up"></i>
+                  </button>
+                  <button class="comment__content--dislike">
+                    <i class="fa-solid fa-thumbs-down"></i>2
+                  </button>
+                </div>
+              </div>
+
+              <button class="comment__content--heart" >
+                <i class="fa-regular fa-heart"></i>
+                <span
+                  class="comment__content--heart__counter"
+                  
+                  >10</span
+                >
+              </button>
+            </div>
+          </article>
+
+          <article class="comment reply">
+            <div>
+              <img
+                src="/assets/avatar_user_2.png"
+                class="comment__avatar"
+                alt="user avatar"
+              />
+            </div>
+            <div class="comment__content">
+              <div class="comment__content--top">
+                <article>
+                  <span class="comment__content--name"> Shane Hobbins </span>
+                  <span class="comment__content--time"> Just now </span>
+                </article>
+              </div>
+              <div class="comment__content--middle">
+                <p class="comment__content--paragraph">
+                  <span style="background-color: lightgrey; border-radius: 5px"
+                    >@Jon Davis
+                  </span>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                </p>
+              </div>
+              <div class="comment__content--bottom">
+                <button class="comment__content--reply" >
+                  <i class="fa-solid fa-reply"></i>Reply
+                </button>
+                <div>
+                  <button class="comment__content--like" >
+                    5<i class="fa-solid fa-thumbs-up"></i>
+                  </button>
+                  <button class="comment__content--dislike">
+                    <i class="fa-solid fa-thumbs-down"></i>2
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="comment reply">
+            <div>
+              <img
+                src="/assets/avatar_user_1.png"
+                class="comment__avatar"
+                alt="user avatar"
+              />
+            </div>
+            <div class="comment__content">
+              <div class="comment__content--top">
+                <article>
+                  <span class="comment__content--name"> Jon Davis </span>
+                  <span class="comment__content--time"> Just now </span>
+                </article>
+              </div>
+              <div class="comment__content--middle">
+                <p class="comment__content--paragraph">
+                  <span style="background-color: lightgrey; border-radius: 5px"
+                    >@Shane Hobbins
+                  </span>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                </p>
+              </div>
+              <div class="comment__content--bottom">
+                <button class="comment__content--reply" >
+                  <i class="fa-solid fa-reply"></i>Reply
+                </button>
+                <div>
+                  <button class="comment__content--like" >
+                    5<i class="fa-solid fa-thumbs-up"></i>
+                  </button>
+                  <button class="comment__content--dislike">
+                    <i class="fa-solid fa-thumbs-down"></i>2
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="main__comments--comment comment">
+            <div>
+              <img
+                src="/assets/avatar_user_1.png"
+                class="comment__avatar"
+                alt="user avatar"
+              />
+            </div>
+            <div class="comment__content">
+              <div class="comment__content--top">
+                <article>
+                  <span class="comment__content--name"> Jon Davis </span>
+                  <span class="comment__content--time"> 20 Minutes ago </span>
+                </article>
+
+                <div>
+                  <button class="comment__content--edit" >
+                    <i class="fa-regular fa-pen-to-square"></i>
+                  </button>
+                  <button class="comment__content--delete" >
+                    <i class="fa-solid fa-trash"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="comment__content--middle">
+                <p class="comment__content--paragraph">
+                  Lorem &#128512; <b>ipsum dolor</b> sit amet, consectetuer
+                  adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                  laoreet dolore magna.
+                </p>
+              </div>
+              <div class="comment__content--bottom">
+                <button class="comment__content--reply" >
+                  <i class="fa-solid fa-reply"></i>Reply
+                </button>
+                <div>
+                  <button class="comment__content--like" >
+                    5<i class="fa-solid fa-thumbs-up"></i>
+                  </button>
+                  <button class="comment__content--dislike">
+                    <i class="fa-solid fa-thumbs-down"></i>2
+                  </button>
+                </div>
+              </div>
+
+              <button class="comment__content--heart" >
+                <i class="fa-regular fa-heart"></i>
+                <span
+                  class="comment__content--heart__counter"
+                  
+                  >10</span
+                >
+              </button>
+            </div>
+          </article>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__content content">
+          <a href="#" class="footer__go-up"
+            ><i class="fa-solid fa-angle-up"></i
+          ></a>
+          <span class="footer__copyright">
+            Copyright &copy; 2020 Meliora, Inc
+          </span>
+          <section class="footer__socials">
+            <a
+              href="https://www.facebook.com/MONOcreators"
+              class="footer__socials--links"
+            >
+              <i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://github.com/IYURA2006"
+              class="footer__socials--links"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              href="https://twitter.com/DefenceU"
+              class="footer__socials--links"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/yuriy-ilnytskyi-113064227/"
+              class="footer__socials--links"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+          </section>
+        </div>
+      </footer>
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="/scripts/swiper.js"></script>
+    <script
+      src="https://kit.fontawesome.com/fcc11c67f1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/scripts/comments.js" defer></script>
+  </body>
+</html>

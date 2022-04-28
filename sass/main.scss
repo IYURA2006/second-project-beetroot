@@ -1,0 +1,121 @@
+@import "mixins.scss";
+@import "reset.scss";
+.main {
+  margin-top: 40px;
+  max-width: 1120px;
+  color: $color-primary-text;
+  padding-bottom: 120px;
+
+  &__swiper {
+    max-height: 352px;
+    border-radius: 7px;
+  }
+
+  &__description {
+    margin-top: 48px;
+
+    &--paragraph {
+      @include base_text;
+    }
+
+    &--subtitle {
+      display: inline-block;
+      @include sub_heading;
+      margin: 31px 0 35px 0;
+    }
+  }
+
+  &__remark {
+    margin-top: 69px;
+    margin-left: 40px;
+    &--paragraph {
+      @include base_text;
+      border-left: 1px solid #dfdfdf;
+      padding-left: 16px;
+      max-width: 960px;
+    }
+    :nth-last-child(2n) {
+      padding-top: 35px;
+      padding-bottom: 10px;
+    }
+    &--subtitle {
+      display: inline-block;
+      margin-top: 70px;
+      @include sub_heading;
+    }
+  }
+
+  &__points {
+    margin-top: 40px;
+    max-width: 928px;
+
+    &--items {
+      @include base_text;
+      position: relative;
+      margin-left: 30px;
+      padding-left: 8px;
+
+      &:before {
+        content: "";
+        position: absolute;
+        width: 7.97px;
+        height: 8.02px;
+        background: $color-primary-text;
+        border-radius: 50px;
+        left: -30px;
+        top: 14px;
+      }
+    }
+
+    :nth-child(2n) {
+      margin-top: 32px;
+    }
+  }
+
+  &__share {
+    margin-top: 94px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dfdfdf;
+
+    &--tag {
+      background: $extra-color;
+      border-radius: 3px;
+      padding: 7.5px 16px;
+      color: $color-primary-text;
+      transition: all 0.5s;
+      @include small_text;
+      &:hover,
+      &:active {
+        background: #dfdfdf;
+      }
+    }
+
+    &--socials {
+      width: 205.5px;
+      display: flex;
+      justify-content: space-between;
+
+      &--title {
+        @include small_text;
+      }
+    }
+  }
+
+  &__comment {
+    max-width: 737px;
+    margin: 40px auto 0 auto;
+    &--title {
+      @include sub_heading;
+    }
+  }
+
+  &__comments {
+    margin: 40px auto;
+    max-width: 737px;
+    &--title {
+      @include sub_heading;
+    }
+  }
+}
